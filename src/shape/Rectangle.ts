@@ -4,15 +4,15 @@ export class Rectangle extends Form {
   private _width: number;
   private _height: number;
 
-  // если необходим доступ к параметрам width
-  //   public get width(): number {
-  //     return this._width;
-  //   }
+  // если необходим доступ к параметрам _width
+  public get width(): number {
+    return this._width;
+  }
 
-  // если необходим доступ к параметрам height
-  //   public get height(): number {
-  //     return this._height;
-  //   }
+  // если необходим доступ к параметрам _height
+  public get height(): number {
+    return this._height;
+  }
 
   constructor(width: number, height: number) {
     super("rectangle");
