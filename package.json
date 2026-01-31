@@ -1,7 +1,13 @@
 {
+  "name": "geometry-lib",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
   "devDependencies": {
-    "@types/node": "^25.1.0",
-    "ts-node-dev": "^2.0.0",
-    "typescript": "^5.9.3"
+    "typescript": "^5.0.0"
   }
 }
