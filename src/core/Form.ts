@@ -16,7 +16,7 @@ export abstract class Form extends EventTarget {
   }
 
   // изменение фигуры. для фронта
-  protected formChange = (): void => {
+  protected formChange(): void {
     this.dispatchEvent(new Event("change"));
-  };
+  }
 }
