@@ -1,5 +1,5 @@
 import { Form } from "../core/Form";
-import { validateParametrs, validate } from "../utils/validate";
+import { validateParametrs, validateTriangleInequality } from "../utils/validate";
 export class Triangle extends Form {
   private _a: number;
   private _b: number;
@@ -27,7 +27,7 @@ export class Triangle extends Form {
 
   // метод изменения сторон треугольника
   public setSize(a: number, b: number, c: number): void {
-    validate(a, b, c);
+    validateTriangleInequality(a, b, c);
     this._a = a;
     this._b = b;
     this._c = c;
